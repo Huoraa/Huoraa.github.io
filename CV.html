@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Huoraa Alshibini, 201711379 -->
+        <title> Creative Designs </title>
+        <meta name="description" content="personal site">
+        <link rel="stylesheet" href="./Css/SubStyle.css">
+        
+        
+    </head>
+        <body>
+
+            <div class= "header" >
+                <nav>
+                    <img class="logo" src="images/logo.png" >
+
+            
+                    <ul class="nav_links">
+                        <li> <a href="homepage.html"> Home </a></li>
+                        <li> <a href="PowerPoint.html"> PowerPoint </a></li> 
+                        <li> <a href="CV.html"> CV </a></li>
+                        <li> <a href="SocialMedia.html"> Social Media </a></li>
+                        <li> <a href="ToDoList.html"> To Do List </a></li>
+                        <li> <a href="BusinessCards.html"> Business Cards </a></li>
+                    </ul>
+                    
+                        
+                        
+                        
+                </nav>
+
+            
+        
+       
+            </div>
+
+
+
+            <div class="photo">
+                <div class="pic UI & UX designer">
+                    <img src="images/UI & UX designer-CV.jpg">
+                </div>
+                <div class="pic GRAPHIC DESIGNER">
+                    <img src="images/GRAPHIC DESIGNER-CV.jpg">
+                </div>
+            </div>
+
+            
+            <div class="Download">
+                <div class="file">
+                     <a class="p1" href="Download/UI & UX designer-CV.zip">Download<span></span></a>
+                </div>
+                <div class="file"></div>
+                     <a class="p2" href="Download/GRAPHIC DESIGNER-CV.zip">Download<span></span></a>
+                 </div>
+            </div>
+        <script>
+            let button = document.querySelector("body a");
+            button.addEventListener("click",()=>{
+                const span = document.querySelector("a span");
+                button.style.paddingRight = '10px';
+                span.style.visibility = "visible";
+                setTimeout(()=>{
+                    span.style.visibility = "hidden";
+                    button.style.transition = ".3s ease-in-out";
+                },3000)
+
+            })
+           
+        </script>
+           
+
+        </body>
+
+</html>

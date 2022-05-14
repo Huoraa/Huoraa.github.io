@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', serif;
+    box-sizing: border-box;
+}
+
+
+.header
+{
+    width: 100%;
+    height: 80px;
+    display: block;
+    
+    
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #E8BFC5;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    border: 1px solid #E8BFC5;
+    margin: 20px 30px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.photo{
+    width: 90%;
+    margin: 50px 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+    
+}
+
+.pic{
+    position: relative;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgrey;
+    
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+    
+}
+
+a span{
+    position: relative;
+    width: 1.5rem;
+    visibility: hidden;
+}
+
+a span::after{
+    content: '/21D3';
+    position: absolute;
+    padding-left: 10px;
+    animation: down 1s linear infinite;
+
+}
+@keyframes down{
+    from{
+        top: -10px;
+        opacity: 0;
+    }
+    to{
+        top: -10px;
+        opacity: 1; 
+    }
+}
+
+.Download {
+    
+    display: flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+
+}
+
+.file{
+    display: flex ;
+    flex-direction: row;
+    padding: 15px 20px;
+    
+   
+}
+
+.p1{
+    text-decoration: none;
+    display: flex;
+    color: #000;
+    background-color: #E8BFC5;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    border: 1px solid #E8BFC5;
+    margin: 10px 10px;
+    margin-top: auto;
+    align-self: flex-start;
+    margin-left: 420px;
+
+
+}
+.p2{
+        text-decoration: none;
+        display: flex;
+        color: #000;
+        background-color: #E8BFC5;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.5s ease-in-out;
+        border-radius: 5px;
+        border: 1px solid #E8BFC5;
+        margin: 10px 10px;
+        margin-top: auto;
+        align-self: flex-start;
+        margin-left: 220px;
+   
+        
+}
+
+
+
+
+
+
+
+
+
